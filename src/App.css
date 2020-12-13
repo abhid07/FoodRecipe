@@ -1,0 +1,313 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.search-bar{
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+  background-color: rgb(255, 149, 111);
+  text-align: center;
+}
+.search-bar label{
+  color:white;
+  font-size: 2rem;
+}
+.search-bar input{
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: royalblue;
+  border: none;
+  margin-left: 10px;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.search-bar button{
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 40px;
+  border: 2px solid white;
+}
+.search-bar button:hover{
+  color: rgba(255, 68, 0, 0.796);
+  background-color: white;
+  border: 2px solid rgba(255, 68, 0, 0.796);
+}
+.link1{
+  color: white;
+}
+.search-bar button:hover .link1{
+  color:rgba(255, 68, 0, 0.796); ;
+}
+.mainrecipe-container{
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+  width: 100%;
+  height: 100%;
+  padding: 13px;
+}
+.mainrecipe-container h1{
+  color: white;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0px 2px 4px red;
+  font-size: 3rem;
+}
+.recipe{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inner-recipe{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px;
+  box-shadow: 0px 2px 8px white;
+}
+.inner-recipe img{
+  width: 350px;
+  height: 350px;
+  margin-left: 15px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+.inner-recipe h2{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+.inner-recipe button{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: transparent;
+  width: 150px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  color: white;
+}
+.inner-recipe button:hover{
+  color: #203a43;
+}
+.link
+{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+.inner-recipe button:hover{
+  background-color: white;
+  border: 1px solid #203a43;
+}
+.inner-recipe button:hover .link{
+  color: #203a43;
+}
+.inner-recipe h3{
+  color: cyan;
+  margin-top: 5px;
+}
+.inner-recipe p{
+  color: white;
+  margin-top: 5px;
+}
+.inner-recipe hr{
+  margin-top: 5px;
+}
+.inner-recipe a{
+  text-decoration: none;
+}
+
+.container{
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+}
+
+.container button{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: transparent;
+  width: 150px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  margin-bottom: 20px;
+}
+.large-container{
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 80px;
+  box-shadow: 0px 2px 8px gray;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ece6e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header{
+  display: flex;
+  width: 100%;
+}
+.header-left{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+.header-left img{
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: 5px;
+  box-shadow: 0px 2px 8px black;
+}
+.calories{
+  color: purple;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.header-right{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+.header-right h1{
+  font-size: 3rem;
+  color: orangered;
+  text-shadow: 0px 2px 4px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.labels-container{
+  margin-top: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: 4px;
+  padding: 10px;
+}
+.cautions{
+  margin-top:40px;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.healthLabels{
+  margin-top: 40px;
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.dietLables{
+  color: rgb(56, 203, 236);
+   margin-top: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+span{
+  color: black;
+  background-color: transparent;
+  font-weight: normal;
+}
+.footer{
+  display: flex;
+  width: 100%;
+}
+.ingrediants{
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.ingrediants h1{
+  color: orangered;
+  text-shadow: 0px 2px 4px black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.ingrediants ul{
+  padding: 5px;
+  list-style: circle;
+} 
+.ingrediants ul li{
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.ingrediants img{
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+} 
+.recipe-link button{
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(101, 202, 253);
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+  height: 50px;
+  transition: 0.5s linear;
+}
+.recipe-link a{
+  text-decoration: none;
+  color: white;
+}
+.recipe-link button:hover{
+  background-color:black ;
+  color: rgb(101, 202, 253);
+  box-shadow: 0px 2px 15px rgb(101, 202, 253);
+  transform: translateY(-3px);
+  border: 1px solid black;
+}
+
+.fav{
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+  width: 100%;
+  min-height: 900px;
+  padding: 13px;
+}
+.toast,.toast1{
+  position: fixed;
+  top: 90%;
+  left: 40%;
+  background-color:rgba(255, 68, 0, 0.796);
+  padding: 15px;
+  border-radius: 45px;
+  display: none;
+}
+.toast h3 , .toast1 h3{
+  color: white;
+}
+.inner-recipe button a{
+  color: white;
+}
+.inner-recipe button:hover a{
+  color: #203a43;
+}
