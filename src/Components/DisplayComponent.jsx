@@ -3,11 +3,11 @@ import {Link} from 'react-router-dom'
 export default function DisplayComponent(props) {
     
 
-    let renderJobs = () => {
+    let renderRecipe = () => {
         const data = props.recipeData
         let render=data.map(dish => {
                 return(
-                <div className="inner-recipe">
+                <div className="inner-recipe" key={dish.recipe.label}>
                     <img src={dish.recipe.image} alt=""/>
                     <h2>{dish.recipe.label}</h2>
                     <h3>Health Labels</h3>
@@ -36,16 +36,13 @@ export default function DisplayComponent(props) {
             <h1>{props.title}</h1>
                 <div className="recipe">
                     {
-                        renderJobs()
+                        renderRecipe()
                     }
                 </div>
         </div>
         <div className="toast" id="toast">
             <h3>Recipe Added To Favourite</h3>
         </div>
-            <div className="toast1" id="toast1">
-                <h3>Recipe Already Added</h3>
-            </div>
         </>
         
     )

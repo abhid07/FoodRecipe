@@ -293,6 +293,10 @@ span{
   min-height: 900px;
   padding: 13px;
 }
+.fav h1{
+  color :white;
+  text-align: center;
+}
 .toast,.toast1{
   position: fixed;
   top: 90%;

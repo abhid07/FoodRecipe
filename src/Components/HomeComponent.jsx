@@ -52,35 +52,19 @@ export default function HomeComponent() {
 
     let hide = () => {
         let toast = document.getElementById('toast')
-        let toast1 = document.getElementById('toast1')
+        // let toast1 = document.getElementById('toast1')
         toast.style.display = 'none'
-        toast1.style.display='none'
+        // toast1.style.display='none'
+    }
+    let hide1=()=>{
+        // let toast1 = document.getElementById('toast1')
+        // toast1.style.display = 'none'
     }
     let addFav=(favv)=>{ 
         let toast = document.getElementById('toast')
-        let toast1 = document.getElementById('toast1')
-        if(fav.length>0)
-        {
-            fav.map(val=>{
-                if (favv.recipe.label !== val.recipe.label) {
-                    setFav([...fav, favv])
-                    toast.style.display="block"
-                    setTimeout(hide, 1000)
-                }
-                else {
-                    setFav([...fav])
-                    toast1.style.display='block'
-                    console.log("alreday added");
-                    setTimeout(hide, 1000)
-                }
-            })
-        }
-        else{
-            setFav([...fav, favv])
-            toast.style.display = "block"
-            setTimeout(hide, 1000)
-        }
-
+        setFav([...fav, favv])
+        toast.style.display = "block"
+        setTimeout(hide, 1000)
        
     }
     return (
